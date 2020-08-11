@@ -1,0 +1,19 @@
+<h1>Edit an article</h1>
+
+</div class="form">
+  <%= form_for(@article) do |a| %>
+  <div class="title">
+    <%= a.label :title %>
+    <%= a.text_field :title %>
+  </div>
+    <div class="detail">
+    <%= a.label :content %>
+    <%= a.text_field :content %>
+    </div>
+    <div class="button">
+    <%= a.submit %>
+    </div>
+    <% end %>
+</div>
+
+ <%= link_to "Back to list", articles_path %>
